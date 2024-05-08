@@ -1,0 +1,123 @@
+<html>
+<head>
+    <title>My First Webpage</title>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <script>
+        const name = document.getElementById('name')
+const password =document.getElementById('password')
+const form = document.getElementById('form')
+const errorElement = document.getElementById('error')
+
+form.addEventListener('submit',  (e)=>  {
+let messages =[]
+if (name.value === '' ) || name.value == null} {
+ messages.push('Name is required')
+}
+if (password.value.length <=6){
+    messages.push('Password must be longer then 6 characters')
+}
+if (messages.length > 0){
+    e.preventDefault()
+    errorElement.innerText =  messages.join(',')
+}
+    </script>
+   
+  <style>*{
+    padding: 0;
+    margin: 0;
+    color:aliceblue;
+    
+}
+
+#navbar{
+    height:40px ;
+    background-color: black;
+    text-transform:capitalize;
+    position:relative;
+ 
+}
+#logo{
+    height: 10px;
+}
+ a{
+    margin-right: 190px;
+    
+}
+
+body{
+    background-color: skyblue;
+}
+img {
+    max-width: 100%;
+    border: 10px;
+}
+.container{
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    
+    
+}
+
+footer{
+    background-color:black;
+    color: white;
+    text-align: center;
+}</style>  
+
+</head>
+<body>
+    <div id="navbar">
+        <a id="logo">&#129419 Butterfly</a>
+        <a>Home</a>
+        <a>Pictures</a>
+        <a>About</a>
+        <button>&#129419</button>
+        
+           <input placeholder="search">
+        
+        </div>
+        <br>
+    
+    <div class="container">
+        <a href="https://jooinn.com/images/beautiful-butterfly-6.jpg">
+            <img src="beautiful-butterfly-6.jpg" alt="butterfly">
+        </a>
+
+        <a href="https://jooinn.com/images/beautiful-butterfly-6.jpg">
+            This is a link
+        </a>
+        <p>Butterflies are the adult flying stage of certain insects belonging to an order or group called Lepidoptera. Moths also belong to this group. The word "Lepidoptera" means "scaly wings" in Greek. This name perfectly suits the insects in this group because their wings are covered with thousands of tiny scales overlapping in rows. The scales, which are arranged in colorful designs unique to each species, are what gives the butterfly its beauty. 
+            Different types of Butterflies:
+            <ol><li>Monarch Butterflies are perhaps the most recognized, with their striking orange and black wings, symbolizing endurance and migration.</li>
+           <li> Swallowtails stand out with their large size and tail-like extensions, showcasing an array of colors and patterns.</li>
+            <li>Blue Morphos are renowned for their dazzling blue wings, creating a mesmerizing effect as they flutter.</li>
+           <li> Painted Ladies exhibit a variety of colors, with their wings painted in shades of orange, black, and white.</li>
+            <li>Glasswing Butterflies offer a unique trait with transparent wings, allowing them to blend into their surroundings seamlessly.</li>
+            </ol>
+        </p>
+    </div>
+    <br><br>
+    <center><img src="butterfly.jpg" height="200px"></center>
+    <br>
+
+    <h1>LOGIN</h1>
+    <form id="form" action="/" method="GET">
+        <div>
+            <label for="name">NAME</label>
+            <input id="name" name="name" type="text" required>
+        </div>
+        <div>
+            <label for="password">PASSWORD</label>
+            <input id="password" name="password" type="text">
+        </div>
+       
+        <button type="submit">Submit</button>
+
+
+
+    </form>
+    
+    <footer>&#129419 &#x1F98B Contact Us on 0876543210 &#129419 &#x1F98B</footer>
+</body>
+</html>
