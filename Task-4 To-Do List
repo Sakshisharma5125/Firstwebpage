@@ -50,6 +50,7 @@ export default ToDoList;
 
 }
 
+<style>
 .todo-list {
     max-width: 400px;
     margin: 0 auto;
@@ -82,6 +83,7 @@ if{
     text-decoration: line-through;
     opacity: 0.6;
 }
+</style>
 
 
 
